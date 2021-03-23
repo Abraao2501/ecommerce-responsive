@@ -17,12 +17,8 @@ const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   //Active Link
-  navLink.forEach((n) => n.classList.add("active"));
   navLink.forEach((n) => n.classList.remove("active"));
-
-  //Remove Menu Mobile
-  const navMenu = document.getElementsById("nav-menu");
-  navMenu.classList.remove("show");
+  this.classList.add("active");
 }
 
 navLink.forEach((n) => n.addEventListener("click", linkAction()));

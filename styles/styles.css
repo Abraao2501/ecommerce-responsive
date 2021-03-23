@@ -152,7 +152,6 @@ img {
 /*=== Show menu ===*/
 .show {
     right: 0;
-
 }
 
 .active {
@@ -160,11 +159,80 @@ img {
 }
 
 /*===== HOME =====*/
+.home {
+    background-color: var(--gray-color);
+    overflow: hidden;
+}
+.home__data {
+    z-index: 100;
+}
+.home__container {
+    height: calc(100vh - var(--header-right))
+}
+.home__sneaker {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.home__shape {
+    width: 220px;
+    height: 220px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
 
+    position: absolute;
+
+    top: 1.5rem;
+    left: 11rem;
+}
+.home__img{
+    position: absolute;
+    top: 1.5rem;
+    left: 11rem;
+    max-width: initial;
+    width: 275px;
+    transform: rotate(var(--rotate-image));
+    z-index: 10;
+}
+.home__new {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    margin-bottom: var(--mb-2);
+    color: var(--dark-color);
+}
+.home__title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--dark-color);
+}
+.home__description {
+    margin-bottom: var(--mb-4);
+    color: var(--dark-color);
+    font-weight: var(--font-semi);
+    font-size:var(--normal-font-size);
+}
 
 /*BUTTONS*/
+.button {
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 1.125rem 2rem;
+    font-weight: var(--font-bold);
+    border-radius: .5rem;
+    transition: .3s;
 
+    height: 4rem;
+}
 
+.button:hover {
+    cursor:pointer;
+
+    transform: translateY(-.25rem)
+
+}
 /*===== COLLECTION =====*/
 
 

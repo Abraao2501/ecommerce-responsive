@@ -129,6 +129,7 @@ img {
 .nav__link {
     color: var(--dark-color);
     font-weight: var(--font-semi);
+   
 }
 
 .nav__link:hover {
@@ -152,19 +153,18 @@ img {
 /*=== Show menu ===*/
 .show {
     right: 0;
+   
 }
 
 .active {
     color: var(--first-color);
+   
 }
 
 /*===== HOME =====*/
 .home {
     background-color: var(--gray-color);
     overflow: hidden;
-}
-.home__data {
-    z-index: 100;
 }
 .home__container {
     height: calc(100vh - var(--header-right))
@@ -193,7 +193,7 @@ img {
     max-width: initial;
     width: 275px;
     transform: rotate(var(--rotate-image));
-    z-index: 10;
+ 
 }
 .home__new {
     display: block;
@@ -237,6 +237,26 @@ img {
 
 
 /*===== FEATURED PRODUCTS =====*/
+.featured__container {
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.sneaker {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--dark-color-light);
+    border-radius: .5rem;
+}
+.sneaker__sale {
+    position: absolute;
+    left: .5rem;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
 
 
 /*===== OFFER =====*/
